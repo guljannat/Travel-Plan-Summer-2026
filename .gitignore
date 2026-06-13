@@ -6,9 +6,3 @@ coverage/
 *.log
 .env*
 !.env.example
-.env
-.env.local
-.env
-.env
-.env
-package-lock.json
