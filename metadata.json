@@ -1,0 +1,6 @@
+{
+  "name": "Summer 2026 U.S. East Coast Itinerary",
+  "description": "An interactive, user-friendly travel guide and route map for the Summer 2026 U.S. East Coast roadtrip, featuring Azerbaijani and English translations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@450;550&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Lora", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-brand-cream-light: #FDFBF7;
+  --color-brand-cream-dark: #F4F1EA;
+  --color-brand-sand: #E8E2D9;
+  --color-brand-terracotta: #A67C52;
+  --color-brand-sage: #7E8C76;
+  --color-brand-sage-dark: #6D7A66;
+  --color-brand-charcoal: #4A443F;
+  --color-brand-muted: #8C8479;
+}
+
+body {
+  background-color: var(--color-brand-cream-light);
+  color: var(--color-brand-charcoal);
+  font-family: var(--font-sans);
+}
+
+/* Custom gorgeous native scrollbars styled with warm sand tones */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-brand-cream-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-sand);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-terracotta);
+}
+
+/* Ensure Leaflet marker styles feel aligned to Natural Tones */
+.custom-leaflet-marker {
+  transition: transform 0.2s ease-in-out;
+}
+.custom-leaflet-marker:hover {
+  transform: scale(1.12);
+  z-index: 1000 !important;
+}
